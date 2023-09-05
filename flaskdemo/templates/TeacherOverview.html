@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Teacher View Point</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  </head>
+  <body>
+    <a href="{{url_for("index")}}">Back</a>
+    <h1>List of Students</h1>
+    {% for key in students %}
+    <!-- <p>{{key}}</p> -->
+    <div class="student">
+      <a href="{{url_for('teacher_view', id=key)}}">Student {{key}}</a>
+    </div>
+    {%endfor%}
+
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+
+<h2>Add new question</h2>
+<form action="/TeacherOverview/NewQuestion?question=''" method="GET">
+  <input type="hidden" name="question" value="">
+  <input type="submit" name="button" value="Add Question">
+</form>
+
+      <h1>All Failed Questions</h1>
+      <table class="styled-table" >
+        <thead>
+          <th>Topic</th>
+          <th>Question</th>
+        </thead>
+        <tbody>
+          {% for v in fails.values()%}
+          {%for q in v%}
+          <tr>
+            <td>{{q[2][0][1]}}</td>
+            <td>{{q[1]}}</td>
+            <td> <form action="/TeacherOverview/NewQuestion?question={{q[1]}}.html" method="GET">
+              <input type="hidden" name="question" value="{{q[1]}}">
+              <input type="submit" name="button" value="Add Question">
+            </form> </td>
+          </tr>
+          {%endfor%}
+          {%endfor%}
+        </tbody>
+      </table>
+
+      <h1>All Unsatisfied Answers</h1>
+      <table class="styled-table">
+        <thead>
+          <th>Topic</th>
+          <th>Question</th>
+          <th>Presumed question</th>
+          <th>Answer</th>
+          <th>Other Possible Questions</th>
+          <th>Other Possible Answers</th>
+        </thead>
+        <tbody>
+          {%for k,v in unhappy.items()%}
+          {%for q in v%}
+          <tr>
+            <td>{{q[2]["answers"][0]["metadata"]["assignment"]}}</td>
+            <td>{{q[1]}}</td>
+            <td>{{q[2]["answers"][0]["questions"][0]}}</td>
+            <td>{{q[2]["answers"][0]["answer"]}}
+              <br>
+              <form action="/TeacherOverview/UpdateQuestion?key={{k}}&qid={{q[0]}}.html" method="GET">
+                <input type="hidden" name="key" value="{{k}}">
+                <input type="hidden" name="qid" value="{{q[0]}}">
+                <input type="hidden" name="type" value="unhappy">
+                <input type="submit" name="updatequestion" value="Update">
+              </form>
+            </td>
+            <td>
+            {%for elem in q[2]["answers"]%}
+            {%if elem != q[2]["answers"][0]%}
+            <div>
+              {{elem["questions"][0]}}?
+            </div>
+            {%endif%}
+            {%endfor%}
+            </td>
+            <td>
+            {%for elem in q[2]["answers"]%}
+            {%if elem != q[2]["answers"][0]%}
+            <div>
+              {{elem["answer"].split("**")[2]}}?
+            </div>
+            {%endif%}
+            {%endfor%}
+            </td>
+          </tr>
+          {%endfor%}
+          {%endfor%}
+        </tbody>
+      </table>
+
+
+
+  </body>
+</html>

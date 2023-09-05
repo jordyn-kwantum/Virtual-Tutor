@@ -1,0 +1,48 @@
+services:
+  redis:
+    image: 'mcr.microsoft.com/oss/bitnami/redis:6.0.8'
+    ports:
+      - "6379:6379"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - redis:/data
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    image: containersvtutor.azurecr.io/react-flask-app-api:latest
+    depends_on:
+      - "redis"
+    env_file:
+      - "server/.env"
+    ports:
+      - "5000:5000"
+    dns:
+      - 8.8.8.8
+    environment:
+      - REDIS_HOST=redis
+    container_name: api
+    hostname: localhost
+
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    image: containersvtutor.azurecr.io/react-flask-app-client:latest
+    ports:
+      - "80:80"
+    container_name: client
+    hostname: localhost
+    domainname: vtutor
+    dns:
+      - 8.8.8.8
+    depends_on:
+      - "api"
+
+volumes:
+  redis: 
+    driver: azure_file
+    driver_opts:
+      share_name: vtutorredis
+      storage_account_name: vtutorstoragenew

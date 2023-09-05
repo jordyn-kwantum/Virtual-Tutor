@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Add New Question</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  </head>
+  <body>
+    <form class="AddQuestion" action="/TeacherOverview/NewQuestion" method="post"  id="questionform">
+      <h4>New question</h4>
+      <textarea name="newq" cols="40" rows="5" form="questionform">{{q}}</textarea>
+      <h4>Answer</h4>
+      <textarea name="answer" cols="40" rows="5" form="questionform"></textarea>
+      <br>
+      <br>
+      <label for="source">Choose source</label>
+      <select  id="source" name="source">
+        <option value="PrimeMinisterQuestions.pdf">PrimeMinisterQuestions</option>
+        <option value="Rhine.pdf">Rhine</option>
+        <option value="Imperialism.pdf">Imperialism</option>
+      </select>
+      <!-- <input type="text" name="newq" value="{{q}}" size="50" style="width: 150px;" > -->
+      <h4>tags (must be given as tag:value)</h4>
+      <textarea name="tags" cols="20" rows="5" form="questionform"></textarea>
+      <!-- <input type="text" name="tags" value=""> -->
+      <div>
+        <p></p>
+      </div>
+      <input type="submit" name="submit" value="Add question">
+    </form>
+  </body>
+</html>

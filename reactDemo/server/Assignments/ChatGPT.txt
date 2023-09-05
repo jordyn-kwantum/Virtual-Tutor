@@ -1,0 +1,68 @@
+Analysis: Almost everyone needs to get used to chatbots chattering
+
+Internet sensation Chat GPT reminded us that anyone can get sick. However, Google was not taken by surprise, writes financial journalist Juha-Matti Mäntylä.
+
+Google became the world's most popular search engine in 2001. Those Finns who actually remember using Altavista or Askjeeves are in their thirties.
+
+This may have created a false sense of security at Google's headquarters.
+
+Undoubtedly, a lot has happened under the hood of a search engine over the years, but from the user's point of view, almost nothing has changed. And why would it be, when the search engine seemed to work.
+
+In the winter of 2023, Google looks vulnerable for the first time. Internet users' interest was captured by Chat GPT, developed by research center Open AI.
+
+It is a text-producing artificial intelligence bot that seems to understand people in a completely new way.
+A plain language answer instead of a list of links
+
+Whereas the Google search engine gives the questioner a list of links to click on, Chat GPT generates a plain-language answer.
+
+The answer can be a short essay on, for example, Finland's constitution or a suggestion for a good pancake recipe.
+
+Teachers checking homework were freaking out about this answer bot - but Google HQ was freaking out even more.
+
+The New York Times recently wrote in December that Chat GPT was "code red" for Google(you switch to another service).
+
+It means someone hit the panic button. Conversational artificial intelligence could be the next big revolution - a bit like how Apple revolutionized smartphones and Google revolutionized search engines. Would Google fall behind in development like mobile phone Nokia and Altavista?
+
+To top it all off, Microsoft, which competes with Google, supported the activities of Open AI, the developer of Chat GPT. We will possibly hear more about that cooperation this evening Finnish time(you switch to another service).
+Google's answer
+
+Last night, Google announced its own conversational AI. It's called Bard.
+
+Bard is to produce "fresh and high-quality answers" to user questions.
+
+It is based on the same LaMDA language model ( Language Model for Dialogue Applications ) as Chat GPT. This means that probably Bardi's answers also resemble those that netizens have admired for a couple of months.
+
+At this point, it must be stated that Google has developed various artificial intelligences over the years and utilizes them in different ways in the background of internet searches. Even the core of Chat GPT artificial intelligence has technology developed by Google engineers.
+
+So Google was not surprised with its pants in knots. According to the company, the new artificial intelligence Bard is in test use - the actual release date is "in the next few weeks".
+
+Google has not said in what form the new artificial intelligence application would be served to users.
+Is artificial intelligence suitable for a search engine?
+
+My first impression is that pretty bad.
+
+When I asked the Chat GPT artificial intelligence about Finland's form of government, after a promising start, I got information about the Finnish royal family, which is said to have a mainly ceremonial role these days.
+
+#ChatGPTfails(you switch to another service)-with the subject tag, you can find many similar mistakes on the web.
+
+Another problem with conversational AI is that it doesn't tell you the source of the information. There isn't even one source, because the information is compiled from the huge masses of information on the internet. The intelligence of this kind of artificial intelligence is that it can deduce which words seem to fit in a row.
+
+So what sounds right.
+
+For this reason, I doubt that even the Bard AI would not appear on Google's search page as such. After all, the search engine is the heart of Google's advertising marketing, and the company does not take any risks in this regard.
+
+On the other hand, in connection with his most recent results announcement, CEO Sundar Pichai promised that users would soon be able to use the company's latest and stronger language models in connection with searches in "experimental and innovative ways."
+
+Yesterday, he described the way in his blog(you switch to another service), with which artificial intelligence will be connected to online searches:
+
+"Is playing the piano easier to learn than playing the guitar, and how much practice do you have to do?"
+
+In Pichai's example, the music question produced a few lines of text above the search results. *"*According to some, it is easier to learn piano because the movements of the fingers and hands are more natural [...] According to others, learning chords is easier on the guitar and..."
+
+On the one hand and on the other hand.
+
+According to Pichai, artificial intelligence can help provide insight to questioners when there is no single right answer.
+
+He did not say whether the example is genuine, which artificial intelligence the example was about, or when such functionality would be released.
+
+However, it is obvious that users need to start getting used to the chatter of artificial intelligence bots.

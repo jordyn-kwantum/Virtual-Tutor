@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Teacher </title>
+  </head>
+  <style media="screen">
+  th, td {
+border-right: 1px solid #eeeeef;
+}
+
+th:last-child, td:last-child {
+border-right: none;
+}
+  </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <body>
+    <h1>Failed Questions</h1>
+    <table class="styled-table">
+      <thead>
+        <th>Topic</th>
+        <th>Question</th>
+      </thead>
+      <tbody>
+        {%for q in fails%}
+        <tr>
+          <td>{{q[2][0][1]}}</td>
+          <td>{{q[1]}}</td>
+          <td> <form action="/TeacherOverview/NewQuestion?question={{q[1]}}.html" method="GET">
+            <input type="hidden" name="question" value="{{q[1]}}">
+            <input type="submit" name="button" value="Add Question">
+          </form> </td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+
+    <h1>Unsatisfied Answers</h1>
+    <table class="styled-table">
+      <thead>
+        <th>Topic</th>
+        <th>Question</th>
+        <th>Presumed question</th>
+        <th>Answer</th>
+        <th>Other Possible Questions</th>
+        <th>Other Possible Answers</th>
+      </thead>
+      <tbody>
+        {%for q in unhappy%}
+        <tr>
+          <td>{{q[2]["answers"][0]["metadata"]["title"]}}</td>
+          <td>{{q[1]}}</td>
+          <td>{{q[2]["answers"][0]["questions"][0]}}</td>
+          <td>{{q[2]["answers"][0]["answer"].split("**")[2]}}
+            <br>
+            <form action="/TeacherOverview/UpdateQuestion?key={{id}}&qid={{q[0]}}.html" method="GET">
+              <input type="hidden" name="key" value="{{id}}">
+              <input type="hidden" name="qid" value="{{q[0]}}">
+              <input type="hidden" name="type" value="unhappy">
+              <input type="submit" name="updatequestion" value="Update">
+            </form>
+          </td>
+          <td>
+          {%for elem in q[2]["answers"]%}
+          {%if elem != q[2]["answers"][0]%}
+          <div>
+            {{elem["questions"][0]}}?
+          </div>
+          {%endif%}
+          {%endfor%}
+          </td>
+          <td>
+          {%for elem in q[2]["answers"]%}
+          {%if elem != q[2]["answers"][0]%}
+          <div>
+            {{elem["answer"].split("**")[2]}}?
+          </div>
+          {%endif%}
+          {%endfor%}
+          </td>
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+    <h1>Summary of Conversation History</h1>
+    <p>{{summary}}</p>
+    <h1>Full Conversation History</h1>
+    <table class="styled-table ">
+      <thead>
+        <th>Topic</th>
+        <th>Question</th>
+        <th>Presumed Question</th>
+        <th>Answer</th>
+      </thead>
+      <tbody>
+        {%for conv in history%}
+        <tr>
+          <td>{{conv[2]["answers"][0]["metadata"]["assignment"]}}</td>
+          <td>{{conv[1]}}</td>
+          <td>{{conv[2]["answers"][0]["questions"][0]}}</td>
+          <td>{{conv[2]["answers"][0]["answer"]}}
+            <br>
+            {%if not conv[2]["answers"][0]["answer"]%}
+            <td> <form action="/TeacherOverview/NewQuestion?question={{conv[1]}}.html" method="GET">
+              <input type="hidden" name="question" value="{{conv[1]}}">
+              <input type="submit" name="button" value="Add Question">
+            </form>
+            {%else%}
+            <form action="/TeacherOverview/UpdateQuestion?key={{id}}&qid={{conv[0]}}.html" method="GET">
+              <input type="hidden" name="key" value="{{id}}">
+              <input type="hidden" name="qid" value="{{conv[0]}}">
+              <input type="hidden" name="type" value="normal">
+              <input type="submit" name="updatequestion" value="Update">
+            </form>
+            {%endif%}
+          </td>
+
+        </tr>
+        {%endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>

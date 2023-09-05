@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Update Question</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  </head>
+  <body>
+    <form class="UpdateQuestion" action="/TeacherOverview/UpdateQuestion" method="post"  id="questionform">
+      <h4>Question</h4>
+      <textarea name="newq" cols="40" rows="5" form="questionform">{{qa[2]["answers"][0]["questions"][0]}}</textarea>
+      <h4>Answer</h4>
+      <textarea name="answer" cols="40" rows="5" form="questionform">{{qa[2]["answers"][0]["answer"].split("**")[2]}}</textarea>
+      <br>
+      <br>
+      <input type="hidden" name="source" value="{{qa[2]['answers'][0]['source']}}">
+      <input type="hidden" name=key value={{key}}>
+      <input type = "hidden" name = "qid" value = "{{qa[0]}}" />
+      <!-- <input type="text" name="newq" value="{{q}}" size="50" style="width: 150px;" > -->
+      <h4>tags (must be given as tag:value)</h4>
+      <textarea name="tags" cols="20" rows="5" form="questionform">
+      {%for k,v in qa[2]["answers"][0]["metadata"].items()%}
+      {{k}}:{{v}}<br>
+      {%endfor%}
+      </textarea>
+      <!-- <input type="text" name="tags" value=""> -->
+      <div>
+        <p></p>
+      </div>
+      <input type="submit" name="submit" value="update question">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Student Page</title>
+  </head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+
+  <body>
+    <a href="{{url_for("index")}}">Back</a>
+    <h1>{{title}}</h1>
+    {% for para in paragraphs %}
+    <p>{{para}}</p>
+    {%endfor%}
+
+    <h2>Find out more about the First Prime Minister of Finland</h2>
+    <p>Talk to the chatbot to find out more and answer the questions below</p>
+
+
+
+
+   <div class = "container">
+    <div> 
+    {% if convo|length > 0%}
+    <p> Q: <b>{{convo[-1][1]}}</b> </p>
+    <p> A: <b>{{convo[-1][2]}}</b> </p>
+    {%endif%}
+  </div>
+  <div>
+    {%if askGood %}
+    <h3>Was this answer helpful?</h3>
+    <form action="/StudentView/{{id}}", method="POST">
+    <input type="submit" value="Yes" name="yesaction"/>
+    <input type="submit" value="No" name="noaction" />
+    </form>
+    {%endif%}
+  </div>
+</div>
+    <h2>Ask a question</h2>
+    <form action="/StudentView/{{id}}" method = "POST">
+    <p><input type = "text" name = "question" /></p>
+    <p><input type = "submit" value = "submit" /></p>
+  </form>
+
+  {%if followup|length > 0%}
+  <h3>Follow up Question</h3>
+  {%for elem in followup%}
+  <form action="/StudentView/{{id}}" method="POST">
+  <input type="submit" Value="{{elem}}" name="follow">
+  </form>
+  {%endfor%}
+  {%endif%}
+
+  <h2>Questions</h2>
+  <div class="">
+    <p><b>What can you tell me about Svinghufuds early life? Before his political career?</b>
+      <br>
+      Talk to the chatbot and see what you can find out? </p>
+    <textarea name="Q1" rows="8" cols="80"></textarea>
+  </div>
+
+
+  <div class="">
+    <p><b>What can you tell me about Svinghufuds political beliefs and ambitions?</b>
+      
+     <br> Talk to the chatbot and see what you can find out?</p>
+    <textarea name="Q2" rows="8" cols="80"></textarea>
+  </div>
+
+
+
+    {% if convo|length > 0%}
+    <h1>Conversation History</h1>
+    <div id="" style="overflow-y:scroll; overflow-x:hidden; height:400px; width:600px">
+    {% for q in convo%}
+    <p> Q: <b>{{q[1]}}</b> </p>
+    <p> A: <b>{{q[2]}}</b> </p>
+    {%endfor%}
+
+  </div>
+    {%endif%}
+
+
+
+  </body>
+</html>

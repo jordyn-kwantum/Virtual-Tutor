@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+  <title>Home page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  </head>
+
+  <body>
+    <h1><a href="{{url_for('student_view', id = 0)}}">Student experience </a></h1>
+    <h1><a href="{{url_for('teacher_general')}}">Teacher experience </a></h1>
+
+  </body>
+</html>

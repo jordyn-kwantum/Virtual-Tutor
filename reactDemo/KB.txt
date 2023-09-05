@@ -1,0 +1,112 @@
+Q: What are altavist and askjeeves
+A: Old search engines that were around before and during googles time
+
+Q: What is chatgpt
+A: chatgpt is a artificial intelligence chatbot that answers questions people ask it
+
+Q: What is the difference between google search results and chatGPT questions
+Q: What is the difference between ChatGPT questions and google search results
+Q: What is the difference between asking chatgpt and asking google
+Q: What is the difference between chatGPT answers and google answers
+Q: What is the difference between google answers and chatgpt answers
+A: Google gives a list of links as search results. chatgpt gives answers in plaintext
+
+Q: Why might Google be threatened by chatgpt
+Q: What is threatening about Chatgpt for google
+Q: Why might google be worried about chatgpt 
+Q: What is google worried about chatgpt
+A: The answers given are in plaintext and easier to understand that lists of links
+
+Q: What is google's response to chatgpt
+Q: How is google responding to chatgpt
+Q: How is google answering chatgpt
+Q: How is google addressing chatgpt
+A: They are creating their own AI chatbot called Bard
+
+Q: what is Bard
+A: a conversational AI created by google that is not out yet. It is based on the same LAMBDA mode as ChatGPT
+
+Q: What are the issues of ChatGPT
+Q: Does chatgpt have issues
+Q: The issues of chatgpt are:
+A: it does not always give the right answers. It gets confused.
+
+Q: What did Pichai say about AI?
+Q: What did the CEO of google say about AI?
+Q: What did Sundar Pichai say about AI?
+Q: what did the google CEO say aobut AI?
+A: that AI can give insight into questions where there is no right answer.
+
+Q: Why are teachers worried about chatgpt.
+Q: Why would teachers be worried about chatgpt
+Q: what is worrying about chatgpt for teachers
+A: Because it gives good answers and can seem to write human text.
+
+Q: Who made chatGPT
+Q: What company made chatgpt
+Q: Who are the people that made chatgpt
+A: The company OpenAI
+
+Q: Is chatGPT always right?
+Q: Does chatGPT make mistakes
+Q: Is chatgpt wrong?
+Q: is chatbot wrong sometimes?
+A: ChatGPT often makes mistakes or gives nonsensical answers. And it will give them with as much confidence as a correct answer
+
+
+Q: How long has Google been the most popular search engine
+Q: When did Google become the most popular search engine
+A: Since 2001
+
+Q: Why might google have false sense of security
+Q: Why does google have a false sense of security
+A: Because they have been at the top for so long
+
+Q: Why has google search not really changed for users at all
+Q: WHy is the user experience for google search the same as in the past
+Q: why have users barely seen a difference in how google search looks
+A: Because it works well. There is no need to change.
+
+Q: What is OpenAI
+Q: Who are OpenAI
+A: It is a company that makes Machine learning programs. And has made chatGPT
+
+Q: What does it mean that ChatGPT understands people differently that google search.
+Q: Why is it said that chatGPT understand people differenly than a google search
+A: Chatgpt gives plaintext answers to questions, and does not give a list of links
+
+
+Q: What is #chatgptfails
+A: twitter tags that show examples of chatGPT failing to give the correct answer.
+
+Q: what is the twitter hastag for the fails of chatgpt
+A: #chatGPTFails
+
+Q: Is there an problem with chatGPT not giving sources for its answers
+Q: What is an issue with chatgpt not giving sources
+Q: What is an issue with chatgpt not giving sources for its answers
+Q: ChatGPT does not give sources, why is this an issue?
+A: This makes it difficult to fact check the answer.
+
+Q: Are chatbots the future of search
+Q: Will we see more chatbots in search
+A: most likely not, but they will contribute to giving more full answers, but will not replace traditional methods completely.
+
+Q: What is the advantage of a plaintext answer
+Q: Why do people prefer a plaintext answer
+Q: What is preferable about a plaintext answer
+A: Poeple do not have to look though many links, but instead are given an aswer directly. Which saves time and helps them with understanding.
+
+
+Q: How much should we trust chatgpt?
+Q: Can we trust chatbot?
+Q: Is CHATGPT trustworthy?
+Q: when can we trust ChatGPT?
+A: ChatGPT often gives incorrect answers, so we need to check the results that it gives. It also does not give sources for its information
+
+Q: Why might teachers be worried about ChatGPT
+Q: Why are teachers worried about chatgpt
+A: Because it might give away answers and write essays for students without them learning of how to answer questions themselves. Also it is counts a plagiarism
+
+Q: What is ChatGPT trained on
+A: On a large collection of information from all over the internet. 

@@ -1,0 +1,16 @@
+FROM python:3.10
+WORKDIR /app
+
+COPY server/requirements.txt server/api.py server/.flaskenv server/config.py server/.env ./
+COPY server/Assignments ./Assignments
+COPY server/AzureCommunication ./AzureCommunication
+COPY server/Database ./Database
+COPY server/Language ./Language
+COPY server/QuestionsAndAnswers ./QuestionsAndAnswers
+COPY server/UserHandling ./UserHandling
+
+RUN pip install -r ./requirements.txt
+ENV FLASK_ENV production
+
+EXPOSE 5000
+CMD ["gunicorn", "-b", ":5000", "api:app"]

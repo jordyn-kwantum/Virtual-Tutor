@@ -1,0 +1,68 @@
+Analyysi: Melkein jokaisen on totuttava chatbottien keskusteluun
+
+Internet-sensaatio Chat GPT muistutti meitä siitä, että kuka tahansa voi sairastua. Google ei kuitenkaan tullut yllätyksenä, kirjoittaa taloustoimittaja Juha-Matti Mäntylä.
+
+Googlesta tuli maailman suosituin hakukone vuonna 2001. Ne suomalaiset, jotka muistavat käyttävänsä Altavistaa tai Askjeevesiä, ovat yli kolmekymppisiä.
+
+Tämä on saattanut luoda väärän turvallisuuden tunteen Googlen päämajassa.
+
+Epäilemättä hakukoneen hupun alla on tapahtunut paljon vuosien varrella, mutta käyttäjän näkökulmasta lähes mikään ei ole muuttunut. Ja miksi se olisi, kun hakukone näytti toimivan.
+
+Talvella 2023 Google näyttää ensimmäistä kertaa haavoittuvalta. Internetin käyttäjien kiinnostuksen herätti tutkimuskeskuksen Open AI:n kehittämä Chat GPT.
+
+Se on tekstiä tuottava tekoälybotti, joka näyttää ymmärtävän ihmisiä täysin uudella tavalla.
+Selkeäkielinen vastaus linkkiluettelon sijaan
+
+Googlen hakukone antaa kysyjälle luettelon linkeistä, joita hän voi napsauttaa, kun taas Chat GPT tuottaa selkeän vastauksen.
+
+Vastaus voi olla lyhyt essee esimerkiksi Suomen perustuslaista tai ehdotus hyvästä pannukakkureseptistä.
+
+Kotitehtäviä tarkistavat opettajat olivat hämmentyneitä tästä vastausbotista – mutta Googlen pääkonttori hämmentyi vielä enemmän.
+
+New York Times kirjoitti äskettäin joulukuussa, että Chat GPT oli "punainen koodi" Googlelle (vaihdat toiseen palveluun).
+
+Se tarkoittaa, että joku painaa paniikkinappia. Keskusteleva tekoäly voi olla seuraava suuri vallankumous – vähän samalla tavalla kuin Apple mullistasi älypuhelimet ja Google mullistavat hakukoneet. Jäikö Google jälkeen matkapuhelin Nokian ja Altavistan kaltaisessa kehityksessä?
+
+Kaiken huipuksi Googlen kanssa kilpaileva Microsoft tuki Chat GPT:n kehittäjän Open AI:n toimintaa. Tästä yhteistyöstä kuulemme mahdollisesti lisää tänä iltana Suomen aikaa (vaihdat toiseen palveluun).
+Googlen vastaus
+
+Viime yönä Google julkisti oman keskustelun tekoälynsä. Sen nimi on Bard.
+
+Bard tuottaa "tuoreita ja laadukkaita vastauksia" käyttäjien kysymyksiin.
+
+Se perustuu samaan LaMDA-kielimalliin ( Language Model for Dialogue Applications ) kuin Chat GPT. Tämä tarkoittaa, että luultavasti myös Bardin vastaukset muistuttavat niitä, joita nettimiehet ovat ihaillut parin kuukauden ajan.
+
+Tässä vaiheessa on todettava, että Google on vuosien aikana kehittänyt erilaisia tekoälyjä ja hyödyntää niitä eri tavoin nettihakujen taustalla. Jopa Chat GPT -tekoälyn ytimessä on Googlen insinöörien kehittämä tekniikka.
+
+Joten Google ei yllättynyt housuistaan. Yhtiön mukaan uusi tekoäly Bard on testikäytössä – varsinainen julkaisupäivä on "muutaman lähiviikkona".
+
+Google ei ole kertonut, missä muodossa uusi tekoälysovellus tarjotaan käyttäjille.
+Sopiiko tekoäly hakukoneeksi?
+
+Ensimmäinen vaikutelmani on aika huono.
+
+Kun kysyin Chat GPT:n tekoälyltä Suomen hallitusmuodosta, sain lupaavan alun jälkeen tietoa Suomen kuninkaallisesta perheestä, jolla sanotaan olevan nykyään lähinnä seremoniallinen rooli.
+
+#ChatGPT epäonnistuu (vaihdat toiseen palveluun) - aihetunnisteen avulla voit löytää verkosta monia vastaavia virheitä.
+
+Toinen keskustelun tekoälyn ongelma on, että se ei kerro sinulle tiedon lähdettä. Ei ole edes yhtä lähdettä, koska tiedot kootaan Internetin valtavista tietomassoista. Tällaisen tekoälyn älykkyys on, että se pystyy päättelemään, mitkä sanat näyttävät sopivan peräkkäin.
+
+Mikä siis kuulostaa oikealta.
+
+Tästä syystä epäilen, etteikö edes Bard AI näkyisi Googlen hakusivulla sellaisenaan. Hakukone onhan Googlen mainosmarkkinoinnin sydän, eikä yritys ota tässä suhteessa riskejä.
+
+Toisaalta toimitusjohtaja Sundar Pichai lupasi tuoreimman tulosilmoituksensa yhteydessä, että käyttäjät voivat pian käyttää yhtiön uusimpia ja vahvempia kielimalleja hakujen yhteydessä "kokeellisella ja innovatiivisella tavalla".
+
+Eilen hän kuvaili blogissaan tapaa (vaihdat toiseen palveluun), jolla tekoäly yhdistetään verkkohakuihin:
+
+"Onko pianonsoitto helpompi oppia kuin kitaransoitto, ja kuinka paljon harjoittelua tarvitset?"
+
+Pichain esimerkissä musiikkikysymys tuotti muutaman rivin tekstiä hakutulosten yläpuolelle. **"*Joidenkin mielestä pianonsoiton oppiminen on helpompaa, koska sormien ja käsien liikkeet ovat luonnollisempia [...] Toisten mukaan sointujen oppiminen on helpompaa kitaralla ja..."
+
+Toisaalta ja toisaalta.
+
+Pichain mukaan tekoäly voi auttaa antamaan näkemystä kysyjille, kun ei ole yhtä oikeaa vastausta.
+
+tällainen toiminto vapautettaisiin.
+
+On kuitenkin selvää, että käyttäjien on alettava tottua tekoälybottien puheeseen.
