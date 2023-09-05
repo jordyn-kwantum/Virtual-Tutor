@@ -87,8 +87,8 @@ pip3 install -r requirements.txt    #max/linux
 ### Staring the Flask server
 Now run the following command to start the server
 ```
-python server.py        #windows
-python3 server.py       #max/linux 
+python api.py        # windows
+python3 api.py       # mac/linux 
 ```
 
 The flask server will now be running at localhost:5000.
@@ -105,13 +105,12 @@ We will now use yarn to install the relevant packages for the react server.
 ```
 yarn install
 ```
-
 We can now start the react server by means of 
+
 ```
 yarn start
 ```
-
-The react server should now be running on localhost:3000.
+The react server should now be running on localhost:3000
 
 
 

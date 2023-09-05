@@ -28,13 +28,13 @@ from Language.translation import Translator, Language
 app = Flask(__name__)
 app.config.from_object(ApplicationConfig)
 
+# encryption used for login
 bcrypt = Bcrypt(app)
-# Encryption used for login
 
-# Cookies for sessioning
+# cookies for sessioning
 server_session = Session(app)
 
-# Cross referencing between webpages
+# cross referencing between webpages
 cors = CORS(app, supports_credentials=True, resources={r"/api/*": {"origins": "*", "allow_headers": "*", "expose_headers": "*"}})
 # cors = CORS(app)
 
@@ -48,8 +48,6 @@ translatorToEn:Translator= None
 if FINNISH_MODE:
     translatorToFin = Translator(Language.ENGLISH, Language.FINNISH)
     translatorToEn = Translator(Language.FINNISH, Language.ENGLISH)
-
-
 
 # create the database
 with app.app_context():
@@ -77,9 +75,8 @@ gameState.setGameState(GameStateEnum.BEFOREGAME)
 current:List[localQuestion] = []
 
 
-
-# Register all of the webpages
-# This adds all of the routes to API calls main app.
+# register all of the webpages
+# this adds all of the routes to API calls main app
 loginPage = constructLoginBlueprint(bcrypt)
 app.register_blueprint(loginPage)
 

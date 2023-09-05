@@ -7,4 +7,5 @@ flask-session
 redis
 requests
 gunicorn
+sentence_transformers
 # celery

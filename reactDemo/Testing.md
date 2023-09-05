@@ -1,4 +1,4 @@
-# Testing Of The Game Experience
+# Testing the Game Experience
 
 ## AI Testing
 We make use of two key pieces of Machine Learning for this project. Firstly we use the azure custom question and answering system, which makes use a natural language model. Secondarily, we make use of a natural langauge translation model and language detection model to translate from Finnish to English and Vice Versa.
@@ -25,13 +25,14 @@ Things to Test:
         - Without information given to teacher might lead to confusion that model is not working
         - Give more information to users to increase model transparancy.
 6. DB Growth. Time between adding new questions to deployed DB and everything being updated so that the system works.
-    - *How to test*: Generate questions, upload and look at azure dashboard.
+    - *How to test*: Generate questions, upload and look at Azure dashboard.
 
 ### Language Detection
 1. Incorrect Detection of Language
     - Mostly possible when the snippets of the text are too small, or if sentences are near identical in two different languages 
         - Finnish is pretty different than most languages. 
         - ? if detect language in article or respones, set static global variable? Translate from then on?
+
 ### Translation
 1. Translation Errors 
     - Translation errors could be due to a few different reasons
@@ -41,13 +42,13 @@ Things to Test:
 2. Incorrect and awkward translations that do not sound natural
     - *Potential Solution*: Store mutliple copies of the question and answer in different languages and relate between the two of them?
     - Store finnish language questions as sub question as as follow up question, then return these values when asking.
+
 ## Technical Testing
 We make use of a flask `python` backend server and a `react` front end to create the game application.
 
-
 ### Server
-
-**Testing of the server functionality**. All of the server runs on Cross origin API calls. As such we need to test every one of the functions thoroughly for errors. We need unit testing
+**Testing of the Server Functionality**:
+All of the server runs on Cross origin API calls. As such we need to test every one of the functions thoroughly for errors. We need unit testing.
 - Use the package `unittest` to generate tests for the individual functions.
 - Three types of functions in the code
     1. GET requests that return a jsonified object based on the local state
@@ -66,7 +67,7 @@ We make use of a flask `python` backend server and a `react` front end to create
 ### Client
 Testing can be done through the interaction with the website directly. Things that should be examined
 - How does the website look at different screen resolutions, phone, tablet, laptop, etc.
-- How does the website work in differen browsers -> IE, Opera, Safari, Chrome, Firefox 
+- How does the website work in different browsers -> IE, Opera, Safari, Chrome, Firefox 
     -> CSS and animations may need to be browser specific.
 - Client is only HTTP not HTTPS when running local -> might be an issue.
     - We would need a certificate for this though.
