@@ -19,7 +19,7 @@ Then navigate to the portal.azure.com for the webapp vtutor and restart the app 
 
 # Understanding the Backend of the Demo
 
-This demo is based on a flask backend and a react frontend, both will have to be started at the same time for the demo to work. You will also need to have redis installed on your machine for the server to work. If you are on windows please install redis [here](https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504), once installed you can check that it is working in powershell by using the command
+This demo is based on a Flask backend and a React frontend, both will have to be started at the same time for the demo to work. You will also need to have redis installed on your machine for the server to work. If you are on windows please install redis [here](https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504), once installed you can check that it is working in powershell by using the command
 
 ```
 $ redis-cli
@@ -97,7 +97,6 @@ The flask server will now be running at localhost:5000.
 Start another powershell or terminal console and nagivate to the react demo and then the client folder. Make sure that npm is installed, you can download it [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 We now install yarn by means of the following command
-
 ```
 npx install --global yarn
 ```
@@ -106,12 +105,13 @@ We will now use yarn to install the relevant packages for the react server.
 ```
 yarn install
 ```
-We can now start the react server by means of 
 
+We can now start the react server by means of 
 ```
 yarn start
 ```
-The react server should now be running on localhost:3000
+
+The react server should now be running on localhost:3000.
 
 
 

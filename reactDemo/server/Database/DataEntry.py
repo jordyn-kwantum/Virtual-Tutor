@@ -180,7 +180,7 @@ def UpdateQuestions(ids: List[int], questions: List[str], answers: List[str], so
                              sources, tags)
 
 
-#FIX
+# FIX
 def DeleteQuestions(ids: List[int], Azure=True):
     for id in ids:
         QApair.query.filter_by(id=id).delete()
