@@ -5,7 +5,6 @@ import { FINNISH_MODE } from '../..'
 const TeacherMassRegister = () => {
     const [studentString, setStudentString] = useState("")
 
-
     function massRegisterStudent(){
         let data = []
         let studentArr = studentString.trim().split("\n")
