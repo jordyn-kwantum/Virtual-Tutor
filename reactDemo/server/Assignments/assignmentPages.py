@@ -6,10 +6,8 @@ import os
 from config import FINNISH_MODE
 
 
-'''
-This file loads the hardcoded assignment into the webui
-'''
 
+# This file loads the hardcoded assignment into the web UI
 def get_assignment_text() -> List[str]:
     filename = "ChatGPTfi.txt" if FINNISH_MODE else "ChatGPT.txt"
     with open(os.path.join("Assignments", filename), 'r', encoding='utf-8') as fp:
@@ -29,15 +27,12 @@ def get_assignment_text() -> List[str]:
     #     text = tran.translate(text)
     return text     
 
-'''
-Constructor for creating the flask blueprint, that allows the assignment page to be called
-'''
+
+# Constructor for creating the flask blueprint, that allows the assignment page to be called
 def constructAssignmentPageBlueprint(gameState:GameState):
     getAssignmentPage = Blueprint("get_assignment_page", __name__)
 
-    '''
-    Route for the assignment page. Restuns a JSON object with the required data
-    '''
+    # Route for the assignment page. Returns a JSON object with the required data
     @getAssignmentPage.route("/api/GetAssignment", methods=["GET"])
     def get_assignment():
         title = "Analyysi: Melkein jokaisen on totuttava chatbottien keskusteluun" if FINNISH_MODE else "Analysis: Almost everyone needs to get used to chatbots chattering"

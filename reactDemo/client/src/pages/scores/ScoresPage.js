@@ -80,7 +80,6 @@ const ScoresPage = () => {
             }
             let winner = GetWinner()
             return (
-
                 <div>
                     {winner}
                     <div className='row'>
@@ -99,11 +98,9 @@ const ScoresPage = () => {
                     </div>
                     {block}
                 </div>
-
             )
-        }
-        else {
-            return <div>{FINNISH_MODE ? "Peli ei ole vielä päättynyt. Päivitä sivu, kun peli on ohi.":"Game is not yet finished. Please referesh the page when the game is over."}</div>
+        } else {
+            return <div>{FINNISH_MODE ? "Peli ei ole vielä päättynyt. Päivitä sivu, kun peli on ohi.":"Game is not yet finished. Please refresh the page when the game is over."}</div>
         }
 
     }
@@ -111,14 +108,15 @@ const ScoresPage = () => {
     function GetWinner() {
         let Team1sum = 0;
         let Team2sum = 0;
+
         for (let i = 0; i < scores.length; i++) {
             Team2sum += scores[i]
             Team1sum += maxScores[i] - scores[i]
         }
+
         if (Team2sum === Team1sum) {
             return (<div><h1>{FINNISH_MODE? "Se on solmio" : "It is a Tie"}</h1></div>)
-        }
-        else if (Team2sum > Team1sum) {
+        } else if (Team2sum > Team1sum) {
             return (<div><h1>{FINNISH_MODE ? "Joukkue 2 voittaa " + {Team2sum} + "pisteellä" : "Team 2 Wins with "+ {Team2sum} + "points"}</h1></div>)
         } else {
             return (<div><h1>{FINNISH_MODE ? "Joukkue 1 voittaa " + {Team1sum} + "pisteellä" : "Team 1 Wins with "+ {Team1sum} + "points"}</h1></div>)

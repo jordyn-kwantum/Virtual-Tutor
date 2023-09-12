@@ -17,9 +17,36 @@ az webapp update --name virtualtutor --resource-group rg-vtutor         # update
 
 Then navigate to the portal.azure.com for the webapp vtutor and restart the app there.
 
-# Understanding the Backend of the Demo
+# Architecture
 
-This demo is based on a Flask backend and a React frontend, both will have to be started at the same time for the demo to work. You will also need to have redis installed on your machine for the server to work. If you are on windows please install redis [here](https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504), once installed you can check that it is working in powershell by using the command
+## client
+
+* ScoresPage
+* MassRegister
+* TeacherAddQuestions
+* TeacherAllocateStudents
+* TeacherDashboard
+* Team1GroupPage
+* Team1Page
+* Team2Page
+* LoginPage
+* RegisterPage
+* LangingPage
+* NotFound
+* httpClient: Declare axios instance.
+* index: Create ReactDOM root.
+* Router: Declare web page paths.
+
+## server
+
+* assignmentPages: Gets text from the assignment file and prepares the Blueprint to be called to a webpage.
+* UpdateAzureDatabase: Controls communication with the Azure Knowledge Base.
+* DataEntry
+* models
+
+# Local Deployment - Understanding the Backend of the Demo
+
+This demo is based on a Flask backend and a React frontend, both will have to be started at the same time for the demo to work locally. You will also need to have redis installed on your machine for the server to work. If you are on windows please install redis [here](https://github.com/microsoftarchive/redis/releases/tag/win-3.0.504), once installed you can check that it is working in powershell by using the command
 
 ```
 $ redis-cli
