@@ -38,3 +38,32 @@ The goal of the game is to engage students in the process of creating and playin
 3. Read the article provided and discuss within your group. Try to identify key ideas and facts that may be asked about by Team 1.
 4. See the answers to the questions written by Team 1. Your goal is to write the correct question for each answer. Discuss as a team, because you can only submit once!
 5. Wait to see how you scored.
+
+## Technical Overview
+
+### Flask - Backend
+
+Flask is a Python framework that holds all the logic required to control functionality within the application. This holds the database, the article text files, and all keys needed to connect the application to Azure. In the codebase, all Flask components are held within the “server” folder.
+
+### React - Frontend
+
+React is a JavaScript framework that defines all pages of the web application as well as their respective HTML and CSS elements. This describes the blueprint of the entire application, while functionality is controlled by the Flask backend. The React portion also controls all HTTP calls between the browser and the application. In the codebase, all React components are held within the “client” folder.
+
+### Docker - Container
+
+Docker is used to create an “image” of the application for easy uploading to an app service host. The Docker image is created in a terminal within the codebase and then uploaded to the App Service in Azure.
+
+### Microsoft Azure
+
+**App Service:**
+
+An App Service resource in Azure holds all information required to host the application. Here, we control when the application starts and stops running, and can see statistics like traffic and memory usage.
+
+**Container Registry:**
+
+The Container Registry resource contains the Docker image that holds the web application. This is connected to the App Service resource where it is then hosted on its domain.
+
+**Cognitive Services:**
+
+The Azure AI Cognitive Services resource holds the knowledge base containing all question and answer pairs. This is connected directly to the codebase.
+
