@@ -1,3 +1,5 @@
+# Azure Standup
+
 # Deployment
 Make sure that you have docker installed in your system as well as the azure command line. Then run the following commands, in this directory
 
